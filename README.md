@@ -1,4 +1,4 @@
-# automate_test
+# TAXEL (Test Acceleration Framework)
 
 A test-automation framework for Nordic nRF devices. Test steps are **plug-in cards (modules)**: drop a folder under `cards/`, restart, and it appears in the UI — no framework code to edit.
 
