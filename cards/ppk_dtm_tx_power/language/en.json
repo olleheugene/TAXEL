@@ -1,0 +1,9 @@
+{
+  "criteria": {
+    "tx_power_dbm": "Target TX Power (dBm)",
+    "target_current_ma": "Max Allowed TX Current (mA)"
+  },
+  "description": "Transmits DTM packets continuously while measuring DTM TX current draw via PPK2.",
+  "help_text": "📡 [PPK2 DTM TX Power Guide]\n\n1. Target TX Power: 0 ~ +10 dBm\n2. Max Allowed Current: <= 15.0 mA PASS\n3. Setup: Configure Target DUT Control Port in top toolbar (19200 bps), place PPK2 Interface Config on dashboard, then run this card\n4. Verdict: Current limit is compared against the average, not the peak",
+  "name": "DTM TX Current Measurement Using PPK2"
+}

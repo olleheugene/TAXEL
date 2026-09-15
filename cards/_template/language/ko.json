@@ -1,0 +1,23 @@
+{
+  "name": "표준 모듈 템플릿",
+  "description": "프레임워크의 모든 핵심 기능과 모범 규격이 포함된 참조 모듈 템플릿입니다.",
+  "help_text": "상단 글로벌 장비 연결 툴바에서 DUT 제어 포트를 설정하세요. 목표 전압 및 허용 편차 임계치를 설정한 후 가상 시뮬레이션 또는 실제 장비 모드로 실행합니다.",
+  "tags": ["템플릿", "샘플", "예제", "센서", "전압", "시리얼"],
+  "criteria": {
+    "target_voltage_mv": "목표 전압",
+    "max_deviation_pct": "최대 허용 편차",
+    "sample_count": "샘플 측정 횟수",
+    "measure_mode": "측정 정밀도 모드",
+    "custom_at_cmd": "커스텀 측정 명령",
+    "enable_calibration": "오프셋 보정 활성화",
+    "calibration_offset_mv": "보정 오프셋 전압"
+  },
+  "criteria_help": {
+    "target_voltage_mv": "인가할 목표 전압입니다. 범위: **800 ~ 5000 mV**.",
+    "max_deviation_pct": "목표 전압 대비 허용 가능한 오차 비율(%)입니다.",
+    "measure_mode": "샘플링 주기 및 측정 정밀도를 선택합니다.",
+    "enable_calibration": "측정 전 소프트웨어 오프셋 보정 기능을 활성화합니다.",
+    "calibration_offset_mv": "ADC 측정값에 가감할 보정 전압값입니다."
+  },
+  "action_test_connection": "통신 연결 테스트"
+}

@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "nrfutil_path": "nrfutil 실행 경로 (.exe/bin)",
+    "fw_file_path": "펌웨어 바이너리 파일 경로 (.hex/.bin)",
+    "netcore_fw_path": "Netcore 펌웨어 파일 경로 (.hex/.bin)",
+    "serial_number": "디버거 시리얼 번호 (S/N)",
+    "erase_mode": "삭제 방식 (Erase Mode)"
+  },
+  "description": "nrfutil CLI를 이용하여 nRF SoC에 펌웨어 바이너리를 프로그램, 검증 및 리셋을 수행합니다.",
+  "help_text": "💾 [Firmware Programmer 안내]\n\n1. nrfutil 경로: 시스템 설치 경로 또는 단일 실행 파일\n2. 지원 확장자: .hex, .bin\n3. 칩셋 락 해제: Erase Mode를 'recover'로 지정 시 recover -> program 순차 수행",
+  "name": "Firmware Programmer (nrfutil)",
+  "tags": [
+    "펌웨어",
+    "플래시",
+    "다운로드",
+    "쓰기",
+    "프로그래밍",
+    "양산"
+  ]
+}

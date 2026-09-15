@@ -1,0 +1,31 @@
+{
+  "name": "シリアルログモニター・検証",
+  "description": "DUTのシリアル(UART)出力を受信し、必須/禁止文字列の判定や対話型ターミナルを実行します。",
+  "help_text": "上部の機器接続ツールバーで選択されたDUT制御ポート通信出力をキャプチャし、指定のパターン(PASS/FAIL)を検証します。インタラクティブターミナルを開いて直接コマンドを送信することも可能です。",
+  "tags": [
+    "シリアル",
+    "uart",
+    "ログ",
+    "ブート",
+    "ターミナル",
+    "モニター",
+    "通信"
+  ],
+  "criteria": {
+    "capture_duration_sec": "受信待機時間",
+    "send_command": "受信前送信コマンド",
+    "required_patterns": "必須含有パターン (PASS)",
+    "forbidden_patterns": "禁止検出パターン (FAIL)",
+    "case_sensitive": "大文字小文字を区別",
+    "save_to_file": "ログをファイル保存"
+  },
+  "criteria_help": {
+    "capture_duration_sec": "シリアル出力を待機する秒数です。範囲: **0.2 ~ 60.0秒**。",
+    "send_command": "受信開始直前にDUTへ送信するコマンドです(例: 'AT\\r\\n', 'version\\r\\n')。",
+    "required_patterns": "合格判定に必要な文字列一覧です。カンマまたは改行で区切ります。",
+    "forbidden_patterns": "検出時に即座に不合格(FAIL)とするエラー文字列です(例: 'ERROR', 'HardFault')。",
+    "case_sensitive": "パターン照合時に大文字小文字を厳密に区別します。",
+    "save_to_file": "収集した全UARTログをtrace/フォルダにテキスト保存します。"
+  },
+  "action_open_terminal": "リアルタイムシリアルターミナルを開く"
+}

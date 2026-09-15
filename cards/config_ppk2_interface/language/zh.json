@@ -1,0 +1,31 @@
+{
+  "action_test_ppk2": "测试 PPK2 连接",
+  "criteria": {
+    "ppk_keep_powered": "运行之间保持供电",
+    "ppk_mode": "测量模式",
+    "ppk_port": "PPK2 设备",
+    "ppk_power_on": "打开会话时启用电源输出",
+    "ppk_power_settle_sec": "上电后等待",
+    "ppk_source_mv": "供电电压"
+  },
+  "criteria_help": {
+    "ppk_keep_powered": "运行结束后仍保持被测件供电，使其串口保持可用。\n**使用 Power Profiler 应用前请务必取消勾选。**",
+    "ppk_mode": "source_meter：由 PPK2 供电。ampere_meter：外部供电。",
+    "ppk_port": "当前检测到的 PPK2 设备。插入后请重新搜索。",
+    "ppk_power_on": "打开会话时给被测件上电。",
+    "ppk_power_settle_sec": "上电后等待被测件启动。",
+    "ppk_source_mv": "输出电压。ampere_meter 模式下同样需要。"
+  },
+  "description": "选择 Power Profiler Kit II、其测量模式和供电电压，并打开共享的 PPK2 会话。",
+  "help_text": "请把这张卡片放在所有 PPK2 测试之前。它拥有 PPK2 会话：设备在此打开一次，测试模块借用它。\n\nsource_meter：由 PPK2 给被测件供电（指示灯呼吸红色）。把 VOUT 接到 VDD_nRF，GND 接地。\nampere_meter：被测件由外部供电，PPK2 串联在回路中（指示灯呼吸蓝色）。把 VIN 和 VOUT 接到电流测量排针两端。",
+  "name": "PPK2 接口配置",
+  "tags": [
+    "ppk2",
+    "功耗",
+    "电流",
+    "配置",
+    "仪器",
+    "供电",
+    "电压"
+  ]
+}

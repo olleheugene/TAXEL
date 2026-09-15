@@ -1,0 +1,31 @@
+{
+  "name": "串口日志监控与校验",
+  "description": "接收DUT串口(UART)输出，校验必须/禁止文本模式，或打开交互式终端。",
+  "help_text": "捕获顶部设备连接工具栏中选择的 DUT 控制端口输出，并验证指定字符串模式(PASS/FAIL)。还可以打开交互式终端直接发送指令并监听。",
+  "tags": [
+    "串口",
+    "uart",
+    "日志",
+    "启动",
+    "终端",
+    "监控",
+    "通信"
+  ],
+  "criteria": {
+    "capture_duration_sec": "监听时长",
+    "send_command": "监听前发送指令",
+    "required_patterns": "必须包含模式 (PASS)",
+    "forbidden_patterns": "禁止出现模式 (FAIL)",
+    "case_sensitive": "区分大小写",
+    "save_to_file": "保存日志至文件"
+  },
+  "criteria_help": {
+    "capture_duration_sec": "接收串口输出的等待时长(秒)。范围: **0.2 ~ 60.0秒**。",
+    "send_command": "开始接收前发送给DUT的命令文本(如 'AT\\r\\n', 'version\\r\\n')。",
+    "required_patterns": "合格判定必须包含的字符串列表，以逗号或换行分隔。",
+    "forbidden_patterns": "检测到时立即判定为FAIL的错误字符串(如 'ERROR', 'HardFault')。",
+    "case_sensitive": "匹配模式时严格区分大小写。",
+    "save_to_file": "将接收到的所有UART日志保存至trace/目录下的文本文件。"
+  },
+  "action_open_terminal": "打开实时串口终端"
+}

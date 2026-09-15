@@ -1,0 +1,9 @@
+{
+  "criteria": {
+    "target_current_ma": "最大允许发送电流（mA）",
+    "tx_power_dbm": "目标发送功率（dBm）"
+  },
+  "description": "持续发送 DTM 测试信号，同时用 PPK2 实时测量发射状态下的消耗电流。",
+  "help_text": "📡 [PPK2 DTM 发送电流指南]\n\n1. 目标发送功率：0 ~ +10 dBm\n2. 最大允许电流：<= 15.0 mA 为合格\n3. 准备工作：在顶部工具栏设置 DUT 控制端口（19200 bps），面板放置 PPK2 Interface Config 卡片，然后运行此卡片\n4. 判定标准：电流上限针对发送过程中的平均电流进行判定，而非瞬时峰值",
+  "name": "使用 PPK2 的 DTM 发送电流测量"
+}

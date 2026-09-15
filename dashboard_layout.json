@@ -1,0 +1,125 @@
+{
+  "settings": {
+    "language": "ko",
+    "mock_mode": true,
+    "auto_report": false,
+    "stop_on_fail": false,
+    "stop_batch_on_fail": false,
+    "seq_repeat": 2,
+    "mode": "engineer",
+    "console_collapsed": false,
+    "window_width": 1512,
+    "window_height": 921
+  },
+  "device_settings": {
+    "serial_port": "/dev/cu.usbmodem0010518863561",
+    "serial_baudrate": 19200
+  },
+  "cards": [
+    {
+      "card_id": "card_4324",
+      "module_id": "config_ppk2_interface",
+      "criteria": {
+        "ppk_port": "/dev/cu.usbmodemECA36ACF6D872",
+        "ppk_mode": "source_meter",
+        "ppk_source_mv": 3000,
+        "ppk_power_on": true,
+        "ppk_keep_powered": true,
+        "ppk_power_settle_sec": 1.5,
+        "step_repeat": 1
+      }
+    },
+    {
+      "card_id": "card_5650",
+      "module_id": "dut_serialnumber_reader",
+      "criteria": {
+        "source_mode": "serial_port",
+        "scan_timeout_sec": 10.0,
+        "dut_query_cmd": "",
+        "csv_file_path": "dut_serials.csv",
+        "csv_column_index": 0,
+        "min_length": 4,
+        "prefix_filter": "",
+        "regex_pattern": "^[A-Za-z0-9_\\-\\.]+$"
+      }
+    },
+    {
+      "card_id": "card_8740",
+      "module_id": "firmware_flasher",
+      "criteria": {
+        "nrfutil_path": "/Users/eugeneyu/.nrfutil/bin/nrfutil",
+        "fw_file_path": "/Users/eugeneyu/workspace/gitProjects/prj_personal/git_automate_test/automate_test/firmwares/dtm/dtm_nrf54l15dk.hex",
+        "netcore_fw_path": "",
+        "serial_number": "001057780666",
+        "erase_mode": "recover",
+        "step_repeat": 1,
+        "send_serial_cmd": false,
+        "serial_cmd_text": ""
+      }
+    },
+    {
+      "card_id": "card_1088",
+      "module_id": "ppk_dtm_tx_power",
+      "criteria": {
+        "tx_power_dbm": 4.0,
+        "tx_pattern": 3,
+        "target_current_ma": 15.0,
+        "min_current_ma": 1.0,
+        "max_peak_ma": 0.0,
+        "sample_duration_sec": 2.0,
+        "average_to_hz": 10000,
+        "settle_sec": 0.3,
+        "power_settle_sec": 1.5,
+        "step_repeat": 1,
+        "send_serial_cmd": false,
+        "serial_cmd_text": "",
+        "port": "/dev/cu.usbmodem0010577806663",
+        "ppk_port": "/dev/cu.usbmodemECA36ACF6D872",
+        "baudrate": 19200
+      }
+    },
+    {
+      "card_id": "card_9439",
+      "module_id": "dtm_rx_test",
+      "criteria": {
+        "tx_channel": 19,
+        "payload_length": 37,
+        "phy_mode": 1,
+        "runtime_ms": 2000,
+        "per_limit": 30.0,
+        "measure_rssi": false,
+        "companion_port": "/dev/cu.usbmodem0010518863563",
+        "companion_baudrate": 19200,
+        "companion_tx_dbm": 0.0,
+        "companion_tx_pattern": 0,
+        "companion_lead_sec": 1.0,
+        "step_repeat": 1,
+        "send_serial_cmd": false,
+        "serial_cmd_text": "",
+        "port": "/dev/cu.usbmodem0010577806663",
+        "baudrate": 0
+      }
+    },
+    {
+      "card_id": "card_1933",
+      "module_id": "dtm_tx_test",
+      "criteria": {
+        "tx_channel": 19,
+        "payload_length": 37,
+        "phy_mode": 1,
+        "bit_pattern": 0,
+        "tx_power_dbm": 0,
+        "runtime_ms": 3000,
+        "companion_port": "/dev/cu.usbmodem0010518863563",
+        "companion_baudrate": 19200,
+        "companion_per_limit": 30.0,
+        "companion_measure_rssi": false,
+        "step_repeat": 1,
+        "send_serial_cmd": false,
+        "serial_cmd_text": "",
+        "port": "/dev/cu.usbmodem0010577806663",
+        "baudrate": 0
+      }
+    }
+  ]
+}

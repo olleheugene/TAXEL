@@ -1,0 +1,31 @@
+{
+  "name": "시리얼 로그 모니터 및 검증",
+  "description": "DUT의 시리얼(UART) 출력을 수신하여 필수/금지 문자열을 검증하거나 대화형 터미널을 실행합니다.",
+  "help_text": "상단 장비 연결 툴바에서 선택된 DUT 제어 포트 통신 출력을 캡처하고 지정된 문자열 패턴(PASS/FAIL)을 검증합니다. 대화형 터미널을 열어 직접 명령어를 전송하고 모니터링할 수도 있습니다.",
+  "tags": [
+    "시리얼",
+    "uart",
+    "로그",
+    "부팅",
+    "터미널",
+    "모니터",
+    "통신"
+  ],
+  "criteria": {
+    "capture_duration_sec": "수신 대기 시간",
+    "send_command": "수신 전 전송 명령",
+    "required_patterns": "필수 포함 패턴 (PASS)",
+    "forbidden_patterns": "금지 검출 패턴 (FAIL)",
+    "case_sensitive": "대소문자 구분",
+    "save_to_file": "로그 파일 저장"
+  },
+  "criteria_help": {
+    "capture_duration_sec": "시리얼 출력을 수신할 대기 시간(초)입니다. 범위: **0.2 ~ 60.0초**.",
+    "send_command": "수신을 시작하기 직전 DUT에 전송할 문자열 명령입니다(예: 'AT\\r\\n', 'version\\r\\n').",
+    "required_patterns": "합격 판정을 위해 반드시 출력되어야 하는 문자열 목록입니다. 쉼표나 줄바꿈으로 구분합니다.",
+    "forbidden_patterns": "검출될 경우 즉시 불합격(FAIL) 처리할 오류 문자열입니다 (예: 'ERROR', 'HardFault', 'Panic').",
+    "case_sensitive": "문자열 일치 검사 시 대소문자를 엄격하게 구분합니다.",
+    "save_to_file": "수집된 전체 UART 로그를 trace/ 폴더에 텍스트 파일로 저장합니다."
+  },
+  "action_open_terminal": "실시간 시리얼 터미널 열기"
+}

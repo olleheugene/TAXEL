@@ -1,0 +1,13 @@
+# Runtime dependencies.
+#
+# The CLI (cli_runner.py) needs pyserial alone: it never imports ui_qt, so it
+# runs on a machine with no Qt and no display. PySide6 and matplotlib are only
+# needed for the desktop GUI (gui_app.py).
+#
+# Cython is not listed here - it is only needed to build the .so/.pyd binaries:
+#   pip install cython setuptools
+
+pyserial          # serial sessions (modules/serial_session.py, library/dtm.py)
+PySide6           # desktop GUI
+matplotlib        # result charts in the GUI report
+ppk2-api          # Power Profiler Kit II (modules/ppk_session.py)

@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "companion_lead_sec": "受信開始前の送信時間",
+    "companion_port": "補助送信機ポート",
+    "companion_tx_dbm": "補助送信出力 (dBm)",
+    "companion_tx_pattern": "補助送信パターン",
+    "measure_rssi": "平均 RSSI を測定",
+    "payload_length": "期待ペイロード長 (バイト)",
+    "per_limit": "最大許容パケットエラー率",
+    "tx_channel": "受信チャネル番号 (0 ~ 39)"
+  },
+  "description": "上部機器接続ツールバーのDUT制御ポート接続でBluetooth DTM受信テストを実行し、パケットエラー率(PER)で判定します。",
+  "help_text": "📡 [Bluetooth DTM 受信テスト]\n\n1. 事前準備: 上部機器接続ツールバーでDUT制御ポートを設定します (DTM標準通信速度: 19200 bps)\n2. 補助送信機ポート(任意): 同一PC上の2台目のDTMデバイス。設定すると同一チャネルで送信を自動開始した後にPERを測定します。\n   空欄の場合は外部送信機が必要となり、送信がない場合PERは100%になります。\n3. ペイロード & PHY: 送信側と一致させる必要があります (期待パケット数の算出に使用)\n4. 判定: 測定PER <= 最大許容パケットエラー率 (標準 30.0%)\n5. 受信時の消費電流測定には「PPK2によるDTM受信電流測定」カードを使用してください",
+  "name": "Bluetooth DTM 受信テスト"
+}

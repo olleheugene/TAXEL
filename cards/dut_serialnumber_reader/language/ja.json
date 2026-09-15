@@ -1,0 +1,36 @@
+{
+  "name": "DUT Serial Number Reader",
+  "description": "シリアルポート（バーコードリーダー / UART）またはCSVファイルからDUTシリアル番号を取得・検証します。",
+  "help_text": "シリアルポート（バーコードリーダー入力またはDUT直接UART応答）または連番CSVファイルからDUTシリアル番号を取得し、試験シーケンスとレポートに反映します。",
+  "tags": [
+    "シリアル",
+    "シリアルポート",
+    "バーコード",
+    "スキャナ",
+    "csv",
+    "dut_serial",
+    "識別",
+    "オペレータ"
+  ],
+  "criteria": {
+    "source_mode": "シリアル取得モード",
+    "scan_timeout_sec": "受信待機タイムアウト",
+    "dut_query_cmd": "DUT照会コマンド（任意）",
+    "csv_file_path": "CSVファイルパス",
+    "csv_column_index": "CSV列インデックス",
+    "min_length": "最小シリアル文字数",
+    "prefix_filter": "必須プレフィックス",
+    "regex_pattern": "検証用正規表現パターン"
+  },
+  "criteria_help": {
+    "source_mode": "シリアル番号取得方法: シリアルポート（バーコードリーダーまたはDUT UART照会）またはCSVファイル（順次読み込み）から選択します。",
+    "scan_timeout_sec": "シリアルポートからのスキャン入力またはUART応答待機の最大秒数です。",
+    "dut_query_cmd": "DUTにシリアル照会を送信するUARTコマンド（例: AT+HWID?\\r\\n）です。バーコードリーダー使用時は空欄にすると自動受信します。",
+    "csv_file_path": "DUTシリアル番号が保存されたCSVファイルのパスです。",
+    "csv_column_index": "CSVファイル内のシリアル番号列インデックス（0開始）です。",
+    "min_length": "有効なシリアル番号の最小文字数です。",
+    "prefix_filter": "シリアル番号が開始する必要があるプレフィックス文字列（例: 'SN-'）です。",
+    "regex_pattern": "シリアル番号の書式を検証するための正規表現です。"
+  },
+  "action_test_read": "シリアル番号を今すぐ読取"
+}

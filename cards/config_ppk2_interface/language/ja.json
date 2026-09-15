@@ -1,0 +1,31 @@
+{
+  "action_test_ppk2": "PPK2接続テスト",
+  "criteria": {
+    "ppk_keep_powered": "実行後も電源を保持",
+    "ppk_mode": "測定モード",
+    "ppk_port": "PPK2デバイス",
+    "ppk_power_on": "セッション開始時に電源出力を有効化",
+    "ppk_power_settle_sec": "電源投入後の待機",
+    "ppk_source_mv": "供給電圧"
+  },
+  "criteria_help": {
+    "ppk_keep_powered": "実行後も DUT の電源を保持し、シリアルポートを維持します。\n**Power Profiler アプリを使う前に必ずオフにしてください。**",
+    "ppk_mode": "source_meter: PPK2 が DUT に給電。ampere_meter: 外部電源。",
+    "ppk_port": "現在検出された PPK2 デバイス。接続後に再検索してください。",
+    "ppk_power_on": "セッション開始時に DUT の電源を入れます。",
+    "ppk_power_settle_sec": "電源投入後、DUT の起動を待ちます。",
+    "ppk_source_mv": "出力電圧。ampere_meter モードでも必要です。"
+  },
+  "description": "Power Profiler Kit IIのデバイス、測定モード、供給電圧を選択し、共用PPK2セッションを開きます。",
+  "help_text": "PPK2を使う試験より前に配置してください。このカードがPPK2セッションを所有します。\n\nsource_meter: PPK2がDUTに電源を供給します(LED赤)。\nampere_meter: DUTは外部電源で、PPK2が直列に入ります(LED青)。",
+  "name": "PPK2インターフェース設定",
+  "tags": [
+    "ppk2",
+    "電力",
+    "電流",
+    "設定",
+    "計測器",
+    "電圧",
+    "供給"
+  ]
+}

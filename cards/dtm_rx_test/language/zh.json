@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "companion_lead_sec": "接收前先发送",
+    "companion_port": "辅助发送端口",
+    "companion_tx_dbm": "辅助发送功率（dBm）",
+    "companion_tx_pattern": "辅助发送图样",
+    "measure_rssi": "测量平均 RSSI",
+    "payload_length": "期望有效载荷长度（字节）",
+    "per_limit": "最大允许丢包率",
+    "tx_channel": "接收通道号（0 ~ 39）"
+  },
+  "description": "通过顶部设备连接工具栏的 DUT 控制端口连接执行蓝牙 DTM 接收测试，并以丢包率（PER）判定。",
+  "help_text": "📡 [蓝牙 DTM 接收测试]\n\n1. 准备工作：在顶部设备连接工具栏中配置 DUT 控制端口（DTM 标准通信波特率：19200 bps）\n2. 辅助发送端口（可选）：本机上的第二台 DTM 设备。配置后本卡片会自动在同一通道启动发射，随后测量 PER。\n   留空则不控制发送端 - 此时必须有其他外部设备正在发送，否则 PER 将为 100%。\n3. 有效载荷与 PHY：必须与发射端一致，以便正确推算期望包数\n4. 判定：实测 PER <= 最大允许丢包率（默认 30.0%）\n5. 若需测量接收工作电流，请使用“PPK2 DTM 接收电流测量”卡片",
+  "name": "蓝牙 DTM 接收测试"
+}

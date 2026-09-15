@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "target_pin": "타겟 GPIO 핀 번호 (P0.xx)",
+    "test_voltage_mv": "검사 인가 전압 (mV)",
+    "max_leakage_ua": "최대 허용 누설 전류 (uA)"
+  },
+  "description": "타겟 보드 GPIO 핀의 쇼트(Short) 및 과전류 누설 상태를 검사합니다.",
+  "help_text": "🔌 [GPIO Short 검사 안내]\n\n1. 검사 대상 핀: P0.02 ~ P0.31\n2. 인가 전압: 1800 ~ 3300 mV\n3. 임계 누설 전류: 5.0 uA 이하 정상",
+  "name": "GPIO Short & Continuity 검사",
+  "tags": [
+    "단락",
+    "쇼트",
+    "핀",
+    "도통",
+    "누설",
+    "전류",
+    "하드웨어"
+  ]
+}

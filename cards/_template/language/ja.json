@@ -1,0 +1,23 @@
+{
+  "name": "標準モジュールテンプレート",
+  "description": "フレームワークの全機能とベストプラクティスを網羅したリファレンステンプレートです。",
+  "help_text": "上部機器接続ツールバーでDUT制御ポートを設定してください。目標電圧と許容誤差を設定し、シミュレーションまたは実機モードで実行します。",
+  "tags": ["テンプレート", "サンプル", "例", "センサー", "電圧", "シリアル"],
+  "criteria": {
+    "target_voltage_mv": "目標電圧",
+    "max_deviation_pct": "最大許容偏差",
+    "sample_count": "測定サンプル数",
+    "measure_mode": "測定モード",
+    "custom_at_cmd": "カスタム測定コマンド",
+    "enable_calibration": "オフセット補正を有効化",
+    "calibration_offset_mv": "補正オフセット電圧"
+  },
+  "criteria_help": {
+    "target_voltage_mv": "印加する目標電圧です。範囲: **800 ~ 5000 mV**。",
+    "max_deviation_pct": "目標電圧に対する許容偏差比率(%)です。",
+    "measure_mode": "サンプリング周期および測定精度を選択します。",
+    "enable_calibration": "測定前のソフトウェアオフセット補正を有効にします。",
+    "calibration_offset_mv": "ADC測定値に加算する補正電圧値です。"
+  },
+  "action_test_connection": "通信接続テスト"
+}

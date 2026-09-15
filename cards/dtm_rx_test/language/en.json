@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "companion_lead_sec": "Start TX before RX",
+    "companion_port": "Companion TX Port",
+    "companion_tx_dbm": "Companion TX Power (dBm)",
+    "companion_tx_pattern": "Companion TX Pattern",
+    "measure_rssi": "Measure average RSSI",
+    "payload_length": "Expected Payload Length (Bytes)",
+    "per_limit": "Max Allowed Packet Error Rate",
+    "tx_channel": "RX Channel Number (0 ~ 39)"
+  },
+  "description": "Runs a Bluetooth DTM receiver test over the top toolbar Target DUT Control Port connection and judges the packet error rate (PER).",
+  "help_text": "📡 [Bluetooth DTM RX Test]\n\n1. Setup: Configure the Target DUT Control Port in the top Hardware Connection toolbar (DTM standard baudrate: 19200 bps)\n2. Companion TX Port (Optional): A second DTM device on this host. If set, this card automatically starts transmission on the same channel before measuring PER.\n   Leave empty to control no transmitter - an external signal source must be active, or PER will be 100%.\n3. Payload & PHY: Must match the transmitter's settings so the expected packet count is accurately calculated\n4. Verdict: Measured PER <= Max Allowed Packet Error Rate (default 30.0%)\n5. For RX current draw measurement, use 'PPK2 DTM RX Current'",
+  "name": "Bluetooth DTM RX Test"
+}

@@ -1,0 +1,12 @@
+{
+  "criteria": {
+    "erase_mode": "擦除方式",
+    "fw_file_path": "固件文件",
+    "netcore_fw_path": "Netcore 固件文件",
+    "nrfutil_path": "nrfutil 路径",
+    "serial_number": "探针序列号"
+  },
+  "description": "通过 nrfutil 命令行把固件烧写到 nRF SoC，并进行校验和复位。",
+  "help_text": "💾 [固件烧写指南]\n\n1. nrfutil 可执行文件：系统路径或独立二进制\n2. 固件文件：.hex 或 .zip\n3. 序列号：调试探针的序列号（留空则自动选择）\n4. 擦除方式：烧写前的擦除范围",
+  "name": "固件烧写器（nrfutil）"
+}

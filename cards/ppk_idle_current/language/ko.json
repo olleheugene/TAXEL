@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "max_idle_ua": "최대 대기 전류 상한 (uA)",
+    "min_idle_ua": "최소 대기 전류 하한 (uA)"
+  },
+  "description": "Power Profiler Kit II(PPK2)를 사용하여 타겟 보드의 대기(Idle/Sleep) 전류를 측정합니다.",
+  "help_text": "🔋 [PPK2 Idle Current 측정 안내]\n\n1. 상한 기준: max_idle_ua (기본 3.5 uA)\n2. 하한 기준: min_idle_ua (기본 1.5 uA)\n3. 측정 타임아웃: 5초 평균 샘플링\n4. 참조예제: https://nrfconnectdocs.nordicsemi.com/ncs/latest/nrf/samples/bluetooth/peripheral_power_profiling/README.html",
+  "name": "PPK2 Idle Current 측정",
+  "tags": [
+    "대기",
+    "유휴",
+    "슬립",
+    "전류",
+    "소비전력",
+    "배터리"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "target_current_ma": "最大許容送信電流 (mA)",
+    "tx_power_dbm": "目標送信出力 (dBm)"
+  },
+  "description": "DTMパケットを連続送信しながらPPK2でDTM TXモードの消費電流を同時測定します。",
+  "help_text": "📡 [PPK2 DTM 送信電力電流ガイド]\n\n1. 目標 TX Power: 0 ~ +10 dBm\n2. 最大許容電流: <= 15.0 mA 合格\n3. 事前準備: 上部ツールバーでDUT制御ポートを設定(19200 bps)し、PPK2 Interface Configカードを配置してから実行します\n4. 判定基準: 電流上限はピークではなく平均測定電流と比較します",
+  "name": "PPK2によるDTM送信時消費電流測定",
+  "tags": [
+    "送信",
+    "出力",
+    "電力",
+    "電流",
+    "無線",
+    "ブルートゥース"
+  ]
+}

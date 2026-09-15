@@ -1,0 +1,36 @@
+{
+  "name": "DUT Serial Number Reader",
+  "description": "시리얼 포트(바코드 스캐너 / UART) 또는 CSV 파일에서 DUT 시리얼 번호를 읽고 검증합니다.",
+  "help_text": "시리얼 포트(바코드 스캐너 입력 또는 DUT 직접 UART 응답) 또는 순차 CSV 파일로부터 DUT 시리얼 번호를 취득하여 전체 시험 시퀀스와 리포트에 반영합니다.",
+  "tags": [
+    "시리얼",
+    "시리얼포트",
+    "바코드",
+    "스캐너",
+    "csv",
+    "dut_serial",
+    "식별",
+    "운영"
+  ],
+  "criteria": {
+    "source_mode": "시리얼 취득 방식",
+    "scan_timeout_sec": "수신 대기 시간",
+    "dut_query_cmd": "DUT 조회 명령 (선택사항)",
+    "csv_file_path": "CSV 파일 경로",
+    "csv_column_index": "CSV 열(컬럼) 인덱스",
+    "min_length": "최소 시리얼 길이",
+    "prefix_filter": "필수 접두사(Prefix)",
+    "regex_pattern": "유효성 정규식 패턴"
+  },
+  "criteria_help": {
+    "source_mode": "시리얼 번호 취득 방식: 시리얼 포트(바코드 스캐너 또는 DUT UART 질의) 또는 CSV 파일(순차 읽기) 중 선택합니다.",
+    "scan_timeout_sec": "시리얼 포트로부터 바코드 스캔 데이터 또는 UART 응답 수신을 대기할 최대 시간(초)입니다.",
+    "dut_query_cmd": "DUT UART로 전송할 시리얼 조회 명령어(예: AT+HWID?\\r\\n)입니다. 바코드 스캐너 사용 시 비워두면 자동으로 스캔 데이터를 수신합니다.",
+    "csv_file_path": "DUT 시리얼 번호 목록이 저장된 CSV 파일 경로입니다.",
+    "csv_column_index": "CSV 파일에서 시리얼 번호가 위치한 열(컬럼) 인덱스(0부터 시작)입니다.",
+    "min_length": "유효한 시리얼 번호의 최소 문자열 길이입니다.",
+    "prefix_filter": "시리얼 번호가 반드시 시작해야 하는 접두어(예: 'SN-')입니다. 비워두면 검사하지 않습니다.",
+    "regex_pattern": "시리얼 번호 형식을 검증하기 위한 정규식(Regex) 표현식입니다."
+  },
+  "action_test_read": "시리얼 번호 즉시 읽기"
+}

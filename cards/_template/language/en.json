@@ -1,0 +1,23 @@
+{
+  "name": "Standard Module Template",
+  "description": "Comprehensive reference module template with all framework capabilities.",
+  "help_text": "Configure the Target DUT Control Port in the top Hardware Connection toolbar. Configure the target voltage and allowed deviation tolerance, then execute in mock simulation or real hardware mode.",
+  "tags": ["template", "sample", "example", "sensor", "voltage", "ppk2", "serial"],
+  "criteria": {
+    "target_voltage_mv": "Target Voltage",
+    "max_deviation_pct": "Max Allowed Deviation",
+    "sample_count": "Sample Count",
+    "measure_mode": "Measurement Mode",
+    "custom_at_cmd": "Custom Command",
+    "enable_calibration": "Enable Calibration Offset",
+    "calibration_offset_mv": "Calibration Offset"
+  },
+  "criteria_help": {
+    "target_voltage_mv": "Target operating voltage. Range: **800 ~ 5000 mV**.",
+    "max_deviation_pct": "Allowable deviation threshold from target voltage.",
+    "measure_mode": "Select sampling precision and duration.",
+    "enable_calibration": "Enable software offset calibration before measuring.",
+    "calibration_offset_mv": "Offset added to raw ADC measurement."
+  },
+  "action_test_connection": "Test Connection"
+}

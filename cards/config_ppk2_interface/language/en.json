@@ -1,0 +1,31 @@
+{
+  "action_test_ppk2": "Test PPK2 Connection",
+  "criteria": {
+    "ppk_keep_powered": "Keep power on between runs",
+    "ppk_mode": "Measurement Mode",
+    "ppk_port": "PPK2 Device",
+    "ppk_power_on": "Enable power output on open",
+    "ppk_power_settle_sec": "Wait after power on",
+    "ppk_source_mv": "Supply Voltage"
+  },
+  "criteria_help": {
+    "ppk_keep_powered": "Keeps the DUT powered after a run, so its serial port stays available.\n**Uncheck before using the Power Profiler app.**",
+    "ppk_mode": "source_meter: the PPK2 supplies the DUT. ampere_meter: external supply.",
+    "ppk_port": "PPK2 devices detected now. Rescan after plugging one in.",
+    "ppk_power_on": "Turns the DUT on when the session opens.",
+    "ppk_power_settle_sec": "Pause after power on, while the DUT boots.",
+    "ppk_source_mv": "Output voltage. Required in ampere_meter mode too."
+  },
+  "description": "Selects the Power Profiler Kit II, its measurement mode and supply voltage, and opens the shared PPK2 session.",
+  "help_text": "Place this card before any PPK2 test. It owns the PPK2 session: the device is opened once here and the test modules borrow it.\n\nsource_meter: the PPK2 supplies the DUT (LED breathes red). Wire VOUT to VDD_nRF and GND to ground.\nampere_meter: the DUT is powered externally and the PPK2 sits in series (LED breathes blue). Wire VIN and VOUT across the current measurement header.",
+  "name": "PPK2 Interface Config",
+  "tags": [
+    "ppk2",
+    "power",
+    "current",
+    "setup",
+    "instrument",
+    "supply",
+    "voltage"
+  ]
+}

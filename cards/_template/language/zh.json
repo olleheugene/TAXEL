@@ -1,0 +1,23 @@
+{
+  "name": "标准模块模板",
+  "description": "包含框架全部核心功能与规范的最佳实践参考模块模板。",
+  "help_text": "在顶部设备连接工具栏中配置 DUT 控制端口。配置目标电压及允许误差阈值后，即可在仿真或实机模式下运行。",
+  "tags": ["模板", "示例", "传感器", "电压", "ppk2", "串口"],
+  "criteria": {
+    "target_voltage_mv": "目标电压",
+    "max_deviation_pct": "最大允许偏差",
+    "sample_count": "采样次数",
+    "measure_mode": "测量模式",
+    "custom_at_cmd": "自定义命令",
+    "enable_calibration": "启用校准偏移",
+    "calibration_offset_mv": "校准偏移电压"
+  },
+  "criteria_help": {
+    "target_voltage_mv": "目标供电电压。范围：**800 ~ 5000 mV**。",
+    "max_deviation_pct": "相对于目标电压允许的最大偏差比例（%）。",
+    "measure_mode": "选择采样周期与测量精度。",
+    "enable_calibration": "在测量前启用软件偏移校准。",
+    "calibration_offset_mv": "叠加到原始 ADC 读数上的偏移补偿电压。"
+  },
+  "action_test_connection": "测试连接"
+}

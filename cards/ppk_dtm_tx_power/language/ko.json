@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "tx_power_dbm": "목표 TX Power (dBm)",
+    "target_current_ma": "최대 허용 TX 전류 (mA)"
+  },
+  "description": "DTM 텍스트/바이너리 패킷을 지속 송신하며 PPK2로 DTM TX 모드의 소비 전류를 동시 측정합니다.",
+  "help_text": "📡 [PPK2 DTM TX Power 전류 안내]\n\n1. 목표 TX Power: 0 ~ +10 dBm\n2. 상한 허용 전류: <= 15.0 mA 합격\n3. 사전 준비: 상단 장비 툴바에서 DUT 제어 포트 설정(19200 bps), 대시보드에 PPK2 Interface Config 카드 배치 후 이 카드 실행\n4. 판정 기준: 전류 상한값은 피크가 아닌 송신 구간 평균 전류와 비교합니다",
+  "name": "PPK2로 DTM TX시 소모 전류 측정",
+  "tags": [
+    "송신",
+    "출력",
+    "전력",
+    "전류",
+    "무선",
+    "블루투스"
+  ]
+}

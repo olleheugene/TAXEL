@@ -1,0 +1,9 @@
+{
+  "criteria": {
+    "max_idle_ua": "Max Allowed Idle Current (uA)",
+    "min_idle_ua": "Min Allowed Idle Current (uA)"
+  },
+  "description": "Measures target board idle/sleep current using Power Profiler Kit II (PPK2).",
+  "help_text": "🔋 [PPK2 Idle Current Setup Guide]\n\n1. Upper Bound: max_idle_ua (Default 3.5 uA)\n2. Lower Bound: min_idle_ua (Default 1.5 uA)\n3. Sampling: 5s average window",
+  "name": "PPK2 Idle Current Measurement"
+}

@@ -1,0 +1,12 @@
+{
+  "criteria": {
+    "nrfutil_path": "nrfutil Executable Path (.exe/bin)",
+    "fw_file_path": "Firmware File (.hex/.bin)",
+    "netcore_fw_path": "Netcore Firmware File (.hex/.bin)",
+    "serial_number": "Debugger Serial Number (S/N)",
+    "erase_mode": "Erase Mode (recover/sectorerase/chiperase)"
+  },
+  "description": "Flashes, verifies, and resets firmware binaries to nRF SoC chipsets via nrfutil CLI.",
+  "help_text": "💾 [Firmware Programmer Guide]\n\n1. nrfutil Executable: System path or standalone binary\n2. Extensions: .hex, .bin\n3. Device Unlock: Set Erase Mode to 'recover' for sequential recover -> program",
+  "name": "Firmware Programmer (nrfutil)"
+}

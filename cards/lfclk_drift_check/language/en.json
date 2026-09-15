@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "max_ppm_offset": "Max Allowed PPM Offset (±Max PPM)",
+    "sample_count": "Measurement Sample Count",
+    "interval_sec": "Serial Output Interval (sec)"
+  },
+  "description": "Measures frequency deviation and PPM offset of 32.768kHz LFCLK relative to HFCLK reference.",
+  "help_text": "⏱️ [HFCLK vs LFCLK Drift Setup Guide]\n\n1. Reference: 64MHz HFCLK Crystal Timer\n2. Target: 32.768kHz External LFCLK Oscillator\n3. Pass Criteria: Drift Offset within ±Max PPM\n4. Firmware Source Code: https://github.com/olleheugene/lfxo_drift_sanity_check",
+  "name": "HFCLK vs LFCLK Drift Test"
+}

@@ -1,0 +1,35 @@
+{
+  "name": "DUT Serial Number Reader",
+  "description": "通过串口（条码扫描枪/UART）或CSV文件读取并验证DUT序列号。",
+  "help_text": "通过串口（条形码扫描枪输入或DUT UART直接应答）或顺序CSV文件获取DUT序列号，并自动注入到测试序列与测试报告中。",
+  "tags": [
+    "串口",
+    "条形码",
+    "扫描枪",
+    "csv",
+    "dut_serial",
+    "识别",
+    "操作员"
+  ],
+  "criteria": {
+    "source_mode": "序列号获取模式",
+    "scan_timeout_sec": "接收等待超时",
+    "dut_query_cmd": "DUT查询指令（可选）",
+    "csv_file_path": "CSV文件路径",
+    "csv_column_index": "CSV列索引",
+    "min_length": "最小序列号长度",
+    "prefix_filter": "必需前缀(Prefix)",
+    "regex_pattern": "验证正则表达式"
+  },
+  "criteria_help": {
+    "source_mode": "获取序列号的方式：串口（条形码扫描枪或DUT UART查询）或CSV文件（顺序读取）。",
+    "scan_timeout_sec": "在串口上等待扫描输入或UART响应的最大秒数。",
+    "dut_query_cmd": "发送给DUT的UART查询指令（例如 AT+HWID?\\r\\n）。使用条码扫描枪时留空即可自动接收。",
+    "csv_file_path": "包含DUT序列号的CSV文件路径。",
+    "csv_column_index": "CSV文件中序列号所在的列索引（从0开始）。",
+    "min_length": "有效序列号的最小字符长度。",
+    "prefix_filter": "序列号必须以此前缀开头（如 'SN-'），留空则不限制。",
+    "regex_pattern": "用于验证序列号格式的正则表达式。"
+  },
+  "action_test_read": "立即读取序列号"
+}

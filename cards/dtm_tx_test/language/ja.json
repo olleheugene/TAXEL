@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "bit_pattern": "ビットパターン",
+    "companion_baudrate": "補助受信機 Baudrate",
+    "companion_measure_rssi": "補助受信機 平均RSSI測定",
+    "companion_per_limit": "補助受信機 最大許容パケットエラー率 (%)",
+    "companion_port": "補助受信機ポート",
+    "payload_length": "ペイロード長 (バイト)",
+    "phy_mode": "PHY モード (1: 1M, 2: 2M, 3: S8, 4: S2)",
+    "runtime_ms": "テスト時間 (ms, 最小 3000 ms = 3秒)",
+    "tx_channel": "送信チャネル番号 (0 ~ 39)",
+    "tx_power_dbm": "送信出力 (dBm)"
+  },
+  "description": "上部機器接続ツールバーのDUT制御ポート接続でBluetooth DTM送信テストを実行し、補助受信機(Companion Receiver)でパケット受信とPERを測定できます。",
+  "help_text": "📡 [Bluetooth DTM 送信テスト]\n\n1. 事前準備: 上部機器接続ツールバーでDUT制御ポートを設定します (DTM標準通信速度: 19200 bps)\n2. テスト時間: 最小設定時間は 3000 ms (3秒) です\n3. 補助受信機 (Companion Receiver, 任意):\n   - 同一PC上の2台目のDTMデバイスポートを指定すると、送信パケットを受信してPERを判定します\n   - 動作順序: DUT送信が先に開始され、1秒後に補助受信機が受信を開始し、送信終了の1秒前に受信を安全に停止します\n   - 補助受信機使用時はパケット復号が可能な 0(PRBS9), 1(1111-0000), 2(1010) を選択してください (3=連続キャリアはパケットなし)\n4. 送信のみ: 補助受信機ポートを空欄にすると送信動作のみ実行します",
+  "name": "Bluetooth DTM 送信テスト",
+  "action_find_dtm_port": "DTMポートを検索"
+}

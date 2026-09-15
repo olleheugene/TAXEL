@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "bit_pattern": "Bit Pattern",
+    "companion_baudrate": "Companion Baudrate",
+    "companion_measure_rssi": "Measure Companion Average RSSI",
+    "companion_per_limit": "Companion Max Allowed PER (%)",
+    "companion_port": "Companion RX Port",
+    "payload_length": "Payload Length (Bytes)",
+    "phy_mode": "PHY Mode (1: 1M, 2: 2M, 3: S8, 4: S2)",
+    "runtime_ms": "Test Runtime (ms, min 3000 ms = 3s)",
+    "tx_channel": "TX Channel Number (0 ~ 39)",
+    "tx_power_dbm": "TX Power (dBm)"
+  },
+  "description": "Runs a Bluetooth DTM transmitter test over the top toolbar Target DUT Control Port connection, with optional Companion Receiver to measure received packets and PER.",
+  "help_text": "📡 [Bluetooth DTM TX Test]\n\n1. Setup: Configure the Target DUT Control Port in the top Hardware Connection toolbar (DTM standard baudrate: 19200 bps)\n2. Test Runtime: Minimum duration setting is 3000 ms (3 seconds)\n3. Companion Receiver (Optional):\n   - Set a second DTM device port to receive transmitted packets and evaluate PER\n   - Sequence: DUT Transmitter starts first; Companion Receiver starts 1.0s later and stops 1.0s before TX ends\n   - Decodable packet patterns (0=PRBS9, 1=1111-0000, 2=1010) are required for packet reception (Pattern 3 is continuous carrier)\n4. TX Only: Leave Companion RX Port empty to perform pure transmission without receiver evaluation",
+  "name": "Bluetooth DTM TX Test",
+  "action_find_dtm_port": "Find DTM port"
+}

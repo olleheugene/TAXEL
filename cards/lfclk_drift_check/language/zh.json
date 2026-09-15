@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "interval_sec": "采样间隔",
+    "max_ppm_offset": "最大允许 PPM 偏移",
+    "sample_count": "采样次数"
+  },
+  "description": "以 HFCLK 为基准测量 32.768kHz LFCLK 的频率偏差和 PPM 偏移。",
+  "help_text": "⏱️ [HFCLK 与 LFCLK 偏差测试指南]\n\n1. 基准：64MHz HFCLK 晶振定时器\n2. 被测：32.768kHz LFCLK\n3. 判定：|PPM 偏移| <= 允许值\n4. 固件源码下载: https://github.com/olleheugene/lfxo_drift_sanity_check",
+  "name": "HFCLK 与 LFCLK 偏差测试"
+}

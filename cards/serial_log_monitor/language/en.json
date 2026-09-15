@@ -1,0 +1,31 @@
+{
+  "name": "Serial Log Monitor",
+  "description": "Capture DUT UART output, verify required/forbidden patterns, or open an interactive terminal.",
+  "help_text": "Captures UART output using the Target DUT Control Port selected in the top Hardware Connection toolbar and validates required/forbidden patterns (PASS/FAIL). You can also open an interactive terminal to send commands directly.",
+  "tags": [
+    "serial",
+    "uart",
+    "log",
+    "boot",
+    "terminal",
+    "monitor",
+    "telemetry"
+  ],
+  "criteria": {
+    "capture_duration_sec": "Capture Duration",
+    "send_command": "Command Before Capture",
+    "required_patterns": "Required Patterns (PASS)",
+    "forbidden_patterns": "Forbidden Patterns (FAIL)",
+    "case_sensitive": "Case Sensitive Match",
+    "save_to_file": "Save Log to File"
+  },
+  "criteria_help": {
+    "capture_duration_sec": "Listening duration in seconds. Range: **0.2 ~ 60.0s**.",
+    "send_command": "Optional text command to transmit to the DUT before listening (e.g. 'AT\\r\\n').",
+    "required_patterns": "Patterns that MUST appear in the UART output. Comma or newline separated.",
+    "forbidden_patterns": "Patterns that cause immediate FAIL if detected (e.g. 'ERROR', 'HardFault').",
+    "case_sensitive": "Enable case-sensitive pattern matching.",
+    "save_to_file": "Save all captured lines to a file in the trace/ directory."
+  },
+  "action_open_terminal": "Open Serial Terminal"
+}

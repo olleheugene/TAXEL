@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "max_ppm_offset": "最大許容PPMオフセット (±Max PPM)",
+    "sample_count": "測定サンプル数",
+    "interval_sec": "シリアル出力間隔 (秒)"
+  },
+  "description": "HFCLK基準に対する32.768kHz LFCLKの周波数偏差およびオフセット(PPM)を測定します。",
+  "help_text": "⏱️ [HFCLK vs LFCLK 32.768kHz Drift測定ガイド]\n\n1. 基準: 64MHz HFCLK内部クリスタルタイマー\n2. 測定対象: 32.768kHz外部LFCLK水晶発振器\n3. 判定基準: 周波数ドリフト誤差 ±Max PPM以内\n4. ダウンロードファームウェアコード: https://github.com/olleheugene/lfxo_drift_sanity_check",
+  "name": "HFCLK vs LFCLK Drift 測定",
+  "tags": [
+    "クロック",
+    "ドリフト",
+    "偏差",
+    "発振器",
+    "水晶",
+    "周波数"
+  ]
+}

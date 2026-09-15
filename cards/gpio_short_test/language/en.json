@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "target_pin": "Target GPIO Pin Number (P0.xx)",
+    "test_voltage_mv": "Test Voltage (mV)",
+    "max_leakage_ua": "Max Allowed Leakage Current (uA)"
+  },
+  "description": "Tests GPIO pins for short circuits and current leakage.",
+  "help_text": "🔌 [GPIO Short Test Guide]\n\n1. Target Pins: P0.02 ~ P0.31\n2. Applied Voltage: 1800 ~ 3300 mV\n3. Max Leakage Threshold: <= 5.0 uA PASS",
+  "name": "GPIO Short & Continuity Test"
+}

@@ -1,0 +1,12 @@
+{
+  "criteria": {
+    "channel": "DTM Channel",
+    "companion_port": "Companion Port",
+    "max_rx_current_ma": "Max Allowed RX Current (mA)",
+    "min_packets": "Min Packets Received (0 = not checked)",
+    "min_rx_current_ma": "Min Expected RX Current (mA)"
+  },
+  "description": "Measures DUT current via PPK2 while running a DTM receiver test, with an optional companion transmitter on a second serial port.",
+  "help_text": "📡 [PPK2 DTM RX Current Guide]\n\n1. Setup: Configure Target DUT Control Port in top toolbar (19200 bps), place PPK2 Interface Config on dashboard, then run this card\n2. DTM Channel: Both sides must use the same channel\n3. Companion Port (Optional): A second DTM device on this host, transmitting so the DUT receives. Leave empty to measure listening current only.\n4. Min Packets: Proves the RF link worked - checked only when companion transmitter is specified\n5. Verdict: Current limit is compared against the average, not the peak",
+  "name": "DTM RX Current Measurement Using PPK2"
+}

@@ -1,0 +1,36 @@
+{
+  "name": "DUT Serial Number Reader",
+  "description": "Acquires and validates DUT serial number via Serial Port (barcode scanner / UART) or CSV file.",
+  "help_text": "Acquires the DUT serial number from a Serial Port (barcode scanner or DUT UART response) or a sequential CSV file, and injects it into the test sequence and trace reports.",
+  "tags": [
+    "serial",
+    "serial_port",
+    "barcode",
+    "scanner",
+    "csv",
+    "dut_serial",
+    "identification",
+    "operator"
+  ],
+  "criteria": {
+    "source_mode": "Acquisition Mode",
+    "scan_timeout_sec": "Read Timeout",
+    "dut_query_cmd": "DUT Query Command (Optional)",
+    "csv_file_path": "CSV File Path",
+    "csv_column_index": "CSV Column Index",
+    "min_length": "Min Serial Length",
+    "prefix_filter": "Required Prefix",
+    "regex_pattern": "Validation Regex"
+  },
+  "criteria_help": {
+    "source_mode": "Method to obtain serial number: Serial Port (barcode scanner or DUT UART query) or Sequential CSV file.",
+    "scan_timeout_sec": "Maximum time in seconds to wait for scanner input or UART response on the serial port.",
+    "dut_query_cmd": "UART query command sent to DUT (e.g. AT+HWID?\\r\\n). Leave empty for barcode scanners that transmit upon scanning.",
+    "csv_file_path": "Path to CSV file containing serial numbers.",
+    "csv_column_index": "0-based column index in CSV file containing the serial numbers.",
+    "min_length": "Minimum required character length for valid serial numbers.",
+    "prefix_filter": "Required prefix that serial numbers must start with (e.g. 'SN-').",
+    "regex_pattern": "Regular expression pattern for format validation."
+  },
+  "action_test_read": "Read Serial Number Now"
+}

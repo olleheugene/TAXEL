@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "max_ppm_offset": "최대 허용 PPM 오차 (±Max PPM)",
+    "sample_count": "측정 샘플 개수",
+    "interval_sec": "시리얼 출력 주기 (초)"
+  },
+  "description": "HFCLK 레퍼런스 대비 32.768kHz LFCLK의 주파수 편차 및 오프셋(PPM)을 측정합니다.",
+  "help_text": "⏱️ [HFCLK vs LFCLK 32.768kHz Drift 측정 결선 안내]\n\n1. 레퍼런스: 64MHz HFCLK 내부 크리스탈 타이머\n2. 타겟: 32.768kHz 외부 LFCLK 크리스탈 발진기\n3. 판정 기준: 주파수 드리프트 오차 ±Max PPM 이내\n4. 다운로드 펌웨어 코드: https://github.com/olleheugene/lfxo_drift_sanity_check",
+  "name": "HFCLK vs LFCLK Drift 측정",
+  "tags": [
+    "클럭",
+    "시계",
+    "드리프트",
+    "편차",
+    "발진기",
+    "수정",
+    "주파수"
+  ]
+}

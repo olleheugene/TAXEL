@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "bit_pattern": "比特图样",
+    "companion_baudrate": "辅助接收波特率",
+    "companion_measure_rssi": "测量辅助接收平均 RSSI",
+    "companion_per_limit": "辅助接收最大允许丢包率 (%)",
+    "companion_port": "辅助接收端口",
+    "payload_length": "有效载荷长度（字节）",
+    "phy_mode": "PHY 模式（1: 1M, 2: 2M, 3: S8, 4: S2）",
+    "runtime_ms": "测试时长（ms，最小 3000 ms = 3秒）",
+    "tx_channel": "发送通道号（0 ~ 39）",
+    "tx_power_dbm": "发送功率（dBm）"
+  },
+  "description": "通过顶部设备连接工具栏的 DUT 控制端口连接执行蓝牙 DTM 发送测试，并可通过辅助接收机（Companion Receiver）验证接收包数与丢包率（PER）。",
+  "help_text": "📡 [蓝牙 DTM 发送测试]\n\n1. 准备工作：在顶部设备连接工具栏中配置 DUT 控制端口（DTM 标准通信波特率：19200 bps）\n2. 测试时长：最小设置为 3000 ms（3秒）\n3. 辅助接收机（Companion Receiver，可选）：\n   - 指定本机上的第二台 DTM 设备端口，接收发送端数据包并判定丢包率（PER）\n   - 驱动时序：DUT 发送先启动，1秒后辅助接收机启动接收，并在发送结束前1秒安全停止接收\n   - 使用辅助接收机时请选择可解码的数据包图样 0(PRBS9)、1(1111-0000) 或 2(1010)（图样 3 为无调制连续载波，无法接收数据包）\n4. 仅发送：留空辅助接收端口则仅执行发送测试",
+  "name": "蓝牙 DTM 发送测试",
+  "action_find_dtm_port": "查找 DTM 端口"
+}

@@ -1,0 +1,31 @@
+{
+  "action_test_ppk2": "PPK2 연결 시험",
+  "criteria": {
+    "ppk_keep_powered": "실행 후 전원 유지",
+    "ppk_mode": "측정 모드",
+    "ppk_port": "PPK2 장치",
+    "ppk_power_on": "세션 열 때 전원 출력 켜기",
+    "ppk_power_settle_sec": "전원 인가 후 대기",
+    "ppk_source_mv": "공급 전압"
+  },
+  "criteria_help": {
+    "ppk_keep_powered": "실행 후에도 DUT 전원을 유지해 시리얼 포트를 살려 둡니다.\n**Power Profiler 앱을 쓰기 전에 반드시 해제하세요.**",
+    "ppk_mode": "source_meter: PPK2가 DUT에 전원 공급. ampere_meter: 외부 전원.",
+    "ppk_port": "현재 검색된 PPK2 장치. 연결 후 다시 검색하세요.",
+    "ppk_power_on": "세션이 열릴 때 DUT 전원을 켭니다.",
+    "ppk_power_settle_sec": "전원 인가 후 DUT가 부팅할 동안 대기합니다.",
+    "ppk_source_mv": "출력 전압. ampere_meter 모드에서도 필요합니다."
+  },
+  "description": "Power Profiler Kit II 장치와 측정 모드, 공급 전압을 선택하고 공용 PPK2 세션을 엽니다.",
+  "help_text": "PPK2를 쓰는 시험보다 앞에 배치하세요. 이 카드가 PPK2 세션을 소유합니다 — 장치를 여기서 한 번만 열고 시험 모듈들이 물려받습니다.\n\nsource_meter: PPK2가 DUT에 전원을 공급합니다(LED 빨강). VOUT을 VDD_nRF에, GND를 접지에 연결합니다.\nampere_meter: DUT는 외부에서 전원을 받고 PPK2가 직렬로 들어갑니다(LED 파랑). VIN과 VOUT을 전류 측정 헤더 양단에 연결합니다.",
+  "name": "PPK2 인터페이스 설정",
+  "tags": [
+    "ppk2",
+    "전력",
+    "전류",
+    "설정",
+    "계측기",
+    "전압",
+    "공급"
+  ]
+}

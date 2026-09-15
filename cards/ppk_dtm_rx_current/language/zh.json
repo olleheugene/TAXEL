@@ -1,0 +1,12 @@
+{
+  "criteria": {
+    "channel": "DTM 通道",
+    "companion_port": "辅助发送端口",
+    "max_rx_current_ma": "最大允许接收电流（mA）",
+    "min_packets": "最小接收包数（0 = 不检查）",
+    "min_rx_current_ma": "最小期望接收电流（mA）"
+  },
+  "description": "在被测件执行 DTM 接收测试时用 PPK2 测量其电流，可在第二个串口上接辅助发送端。",
+  "help_text": "📡 [PPK2 DTM 接收电流指南]\n\n1. 准备工作：在顶部工具栏配置 DUT 控制端口（19200 bps），面板放置 PPK2 Interface Config 卡片，然后运行此卡片\n2. DTM 通道：收发双方必须使用同一通道\n3. 辅助端口（可选）：本机上的第二台 DTM 设备，发送信号让 DUT 真正接收。留空则只测量射频待机接收时的电流\n4. 最小包数：用于证明链路确实正常工作 - 仅在配置了辅助发送端时检查\n5. 判定标准：阈值针对平均电流进行判定，而非峰值",
+  "name": "使用 PPK2 的 DTM 接收电流测量"
+}

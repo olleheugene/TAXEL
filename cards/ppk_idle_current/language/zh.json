@@ -1,0 +1,9 @@
+{
+  "criteria": {
+    "max_idle_ua": "最大允许静态电流（uA）",
+    "min_idle_ua": "最小允许静态电流（uA）"
+  },
+  "description": "使用 Power Profiler Kit II（PPK2）测量目标板的静态/睡眠电流。",
+  "help_text": "🔋 [PPK2 静态电流测量指南]\n\n1. 上限：max_idle_ua（默认 3.5 uA）\n2. 下限：min_idle_ua（默认 1.5 uA）\n3. 需要 PPK2 Interface Config 卡片",
+  "name": "PPK2 静态电流测量"
+}

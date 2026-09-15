@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "max_leakage_ua": "最大允许漏电流",
+    "target_pin": "目标引脚",
+    "test_voltage_mv": "施加电压"
+  },
+  "description": "检测 GPIO 引脚的短路和漏电流。",
+  "help_text": "🔌 [GPIO 短路测试指南]\n\n1. 目标引脚：P0.02 ~ P0.31\n2. 施加电压：1800 ~ 3300 mV\n3. 判定：漏电流 <= 最大允许值",
+  "name": "GPIO 短路与连通性测试"
+}
