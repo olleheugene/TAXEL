@@ -1,4 +1,4 @@
-# Test Acceleration Framework (TAXEL) 
+# automate_test
 
 A test-automation framework for Nordic nRF devices. Test steps are **plug-in cards (modules)**: drop a folder under `cards/`, restart, and it appears in the UI — no framework code to edit.
 
@@ -16,18 +16,17 @@ One core drives both a desktop GUI and a Qt-free CLI, so a step that passes in C
 
 Complete documentation is maintained in the [**`wiki/`**](wiki/Home.md) directory:
 
-| Document | What it covers |
-|---|---|
-| **[Wiki Home](wiki/Home.md)** | Overview, key features, architecture, and complete wiki navigation index. |
-| **[Getting Started](wiki/Getting-Started.md)** | System requirements, Python virtual environment setup, dependencies installation, and first run. |
-| **[GUI User Guide](wiki/GUI-User-Guide.md)** | Desktop UI layout, card palette and dashboard, global hardware connection toolbar, operator vs. engineer modes, test execution, and reports. |
-| **[CLI User Guide](wiki/CLI-User-Guide.md)** | Interactive terminal menu, headless batch mode, command-line arguments, and CI/CD pipeline integration. |
-| **[Recipe Management](wiki/Recipe-Management.md)** | Recipe file (`.recipe.json`) structure, SHA-256 content fingerprinting, export/import, and tamper-proof locking. |
-| **[Standard Cards Reference](wiki/Standard-Cards-Reference.md)** | Specification and default criteria for the 11 built-in cards (PPK2 config, DTM RF tests, PPK power profiling, firmware flasher, GPIO test, etc.). |
-| **[새 카드 개발 가이드 (한국어)](wiki/Module-Development-Guide.md)** | 스캐폴딩 도구, `BaseCard` 구현, 기준값 스키마, 다국어 및 결선 안내 등록, Cython 바이너리 빌드 가이드. |
-| **[Card Development Guide (English)](wiki/Module-Development-Guide-En.md)** | Complete technical reference manual for card authors: class contract, criteria schema, serial session sharing, result format, and binary packaging. |
-| **[PPK2 API Reference](wiki/PPK2-API.md)** | Shared Power Profiler Kit II session, current measurement mechanics, `PPKStats` units, idle current, and DTM measurement sequences. |
-| **[Library DTM API Reference](wiki/Library-DTM-API.md)** | Direct Test Mode (DTM) library in `library/`: 23-key setup dictionary, return shapes, and shared serial session borrowing. |
+| Document | Korean / 한국어 | What it covers |
+|---|---|---|
+| **[Wiki Home](wiki/Home.md)** | [한국어](wiki/Home-Ko.md) | Overview, key features, architecture, and complete wiki navigation index. |
+| **[Getting Started](wiki/Getting-Started.md)** | [한국어](wiki/Getting-Started-Ko.md) | System requirements, Python virtual environment setup, dependencies installation, and first run. |
+| **[GUI User Guide](wiki/GUI-User-Guide.md)** | [한국어](wiki/GUI-User-Guide-Ko.md) | Desktop UI layout, card palette and dashboard, global hardware connection toolbar, operator vs. engineer modes, test execution, and reports. |
+| **[CLI User Guide](wiki/CLI-User-Guide.md)** | [한국어](wiki/CLI-User-Guide-Ko.md) | Interactive terminal menu, headless batch mode, command-line arguments, and CI/CD pipeline integration. |
+| **[Recipe Management](wiki/Recipe-Management.md)** | [한국어](wiki/Recipe-Management-Ko.md) | Recipe file (`.recipe.json`) structure, SHA-256 content fingerprinting, export/import, and tamper-proof locking. |
+| **[Standard Cards Reference](wiki/Standard-Cards-Reference.md)** | [한국어](wiki/Standard-Cards-Reference-Ko.md) | Specification and default criteria for the 11 built-in cards (PPK2 config, DTM RF tests, PPK power profiling, firmware flasher, GPIO test, etc.). |
+| **[Card Development Guide](wiki/Module-Development-Guide.md)** | [한국어](wiki/Module-Development-Guide-Ko.md) | Complete technical reference manual for card authors: class contract, criteria schema, serial session sharing, scaffolding tool, result format, and binary packaging. |
+| **[PPK2 API Reference](wiki/PPK2-API.md)** | — | Shared Power Profiler Kit II session, current measurement mechanics, `PPKStats` units, idle current, and DTM measurement sequences. |
+| **[Library DTM API Reference](wiki/Library-DTM-API.md)** | — | Direct Test Mode (DTM) library in `library/`: 23-key setup dictionary, return shapes, and shared serial session borrowing. |
 
 ---
 
@@ -50,7 +49,7 @@ Complete documentation is maintained in the [**`wiki/`**](wiki/Home.md) director
 servers, a station reached over SSH, a bare container. It also means `ui_qt/` is the replaceable layer — a different frontend would reuse `core/` and `cards/`
 unchanged.
 
-See the [Card Development Guide](wiki/Module-Development-Guide-En.md) for the full directory layout.
+See the [Card Development Guide](wiki/Module-Development-Guide.md) for the full directory layout.
 
 ---
 
@@ -305,7 +304,7 @@ python3 cli_runner.py --run dtm_tx_test --set dtm_tx_test.port=/dev/cu.usbmodem-
 
 Empty means inherit, and an empty override is not stored in the recipe, so existing recipe fingerprints are unaffected. In the GUI the override is a field in the card's settings, and an overridden card is badged `⚠️ Own port: …`.
 
-Details are in the [Card Development Guide](wiki/Module-Development-Guide-En.md).
+Details are in the [Card Development Guide](wiki/Module-Development-Guide.md).
 
 ---
 

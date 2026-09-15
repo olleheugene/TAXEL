@@ -1,5 +1,5 @@
 {
-  "app_title": "nRF Test Suite デスクトップアプリケーション",
+  "app_title": "Test Acceleration Framework (TAXEL) デスクトップアプリケーション",
   "auto_report": "全試験後にレポート画面を自動で開く",
   "badge_no_serial": "⚡ 直結 HW (シリアル不要)",
   "badge_serial_override": "⚠️ 専用ポート: {port}",
@@ -204,7 +204,7 @@
   "log_trace_corrupt": "⚠️ 破損した記録をスキップします: {location}",
   "log_trace_save_failed": "❌ トレース記録の保存に失敗しました: {error}",
   "log_watchdog_timeout": "[WATCHDOG] '{module}' が {timeout}秒以内に終わりませんでした。シーケンスを継続するため失敗として扱います。(ワーカースレッドはバックグラウンドに残る場合があります)",
-  "logo_title": "nRF Test Suite",
+  "logo_title": "Test Acceleration Framework (TAXEL)",
   "menu_language": "🌐 言語 / Language",
   "menu_mode": "モード",
   "menu_open_trace": "トレース記録フォルダを開く",

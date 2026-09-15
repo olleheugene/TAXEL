@@ -1,5 +1,5 @@
 {
-  "app_title": "nRF Test Suite Desktop Framework",
+  "app_title": "Test Acceleration Framework (TAXEL) Desktop Framework",
   "auto_report": "Auto-open report window after all tests",
   "badge_no_serial": "⚡ Direct HW (No Serial)",
   "badge_serial_override": "⚠️ Own port: {port}",
@@ -204,7 +204,7 @@
   "log_trace_corrupt": "⚠️ Skipping a corrupted record: {location}",
   "log_trace_save_failed": "❌ Failed to save the trace record: {error}",
   "log_watchdog_timeout": "[WATCHDOG] '{module}' did not finish within {timeout}s. Marking it failed so the sequence can continue. (the worker thread may remain in the background)",
-  "logo_title": "nRF Test Suite",
+  "logo_title": "Test Acceleration Framework (TAXEL)",
   "menu_language": "🌐 Language",
   "menu_mode": "Mode",
   "menu_open_trace": "Open Trace Log Folder",

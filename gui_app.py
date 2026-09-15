@@ -2054,7 +2054,7 @@ class TestReportDialog(QDialog):
 
         lines = [
             "==========================================================================",
-            "                 nRF DTM & Test Suite Summary Report                      ",
+            "             Test Acceleration Framework (TAXEL) Summary Report           ",
             "==========================================================================",
             f"Generated At  : {time.strftime('%Y-%m-%d %H:%M:%S')}",
             f"Overall Result: {'PASS' if fail_count == 0 and total_count > 0 else 'FAIL'}",
@@ -2158,7 +2158,7 @@ class TestReportDialog(QDialog):
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>nRF Test Suite Summary Report</title>
+    <title>Test Acceleration Framework (TAXEL) Summary Report</title>
     <style>
         body {{ background-color: #0f172a; color: #f8fafc; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 30px; margin: 0; }}
         .card {{ background-color: #1e293b; border-radius: 12px; padding: 24px; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); }}
@@ -2175,7 +2175,7 @@ class TestReportDialog(QDialog):
 <body>
     <div class="card">
         <div style="display: flex; justify-content: space-between; align-items: center;">
-            <h1>📊 nRF DTM & Test Suite Report</h1>
+            <h1>📊 Test Acceleration Framework (TAXEL) Report</h1>
             <span class="badge {'pass' if is_overall_pass else 'fail'}">{'OVERALL PASS' if is_overall_pass else 'OVERALL FAIL'}</span>
         </div>
         <p style="color: #94a3b8;">Generated At: {time.strftime('%Y-%m-%d %H:%M:%S')}</p>

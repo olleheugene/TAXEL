@@ -2,7 +2,7 @@
 """
 [Module Template / 모듈 개발 템플릿]
 
-nRF DTM & Test Suite 프레임워크의 모든 표준 기능과 모범 사례를 포함한 종합 템플릿입니다.
+Test Acceleration Framework (TAXEL) 프레임워크의 모든 표준 기능과 모범 사례를 포함한 종합 템플릿입니다.
 새로운 시험 모듈을 개발할 때 이 폴더를 복사하거나 `tools/create_module.py`를 실행하여 시작하세요.
 
 주요 포함 기능:

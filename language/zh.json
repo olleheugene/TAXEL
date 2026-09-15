@@ -1,5 +1,5 @@
 {
-  "app_title": "nRF 测试套件桌面框架",
+  "app_title": "Test Acceleration Framework (TAXEL) 桌面框架",
   "auto_report": "全部测试结束后自动打开报告窗口",
   "badge_no_serial": "⚡ 直连硬件（不使用串口）",
   "badge_serial_override": "⚠️ 独立端口：{port}",
@@ -204,7 +204,7 @@
   "log_trace_corrupt": "⚠️ 跳过一条损坏的记录：{location}",
   "log_trace_save_failed": "❌ 追溯记录保存失败：{error}",
   "log_watchdog_timeout": "[看门狗] '{module}' 未在 {timeout} 秒内完成。已标记为失败以便序列继续。（工作线程可能仍在后台运行）",
-  "logo_title": "🧩 nRF 测试套件",
+  "logo_title": "Test Acceleration Framework (TAXEL)",
   "menu_language": "🌐 语言",
   "menu_mode": "模式",
   "menu_open_trace": "打开追溯日志文件夹",

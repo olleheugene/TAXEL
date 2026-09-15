@@ -1,5 +1,5 @@
 {
-  "app_title": "nRF Test Suite Native Python Desktop GUI",
+  "app_title": "Test Acceleration Framework (TAXEL) Native Python Desktop GUI",
   "auto_report": "전체 시험 후 리포트 창 자동 열기",
   "badge_no_serial": "⚡ 직결 HW (시리얼 미필요)",
   "badge_serial_override": "⚠️ 전용 포트: {port}",
@@ -204,7 +204,7 @@
   "log_trace_corrupt": "⚠️ 손상된 기록을 건너뜁니다: {location}",
   "log_trace_save_failed": "❌ 추적 기록 저장 실패: {error}",
   "log_watchdog_timeout": "[WATCHDOG] '{module}'이 {timeout}초 안에 끝나지 않았습니다. 시퀀스를 계속 진행하기 위해 실패로 처리합니다. (작업 스레드는 백그라운드에 남을 수 있습니다)",
-  "logo_title": "nRF Test Suite",
+  "logo_title": "Test Acceleration Framework (TAXEL)",
   "menu_language": "🌐 언어 / Language",
   "menu_mode": "모드",
   "menu_open_trace": "추적 기록 폴더 열기",

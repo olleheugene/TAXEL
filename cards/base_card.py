@@ -118,7 +118,7 @@ class SerialLogParser:
 
 class BaseCard(ABC):
     """
-    Base contract for every test or configuration card in nRF Test Suite.
+    Base contract for every test or configuration card in Test Acceleration Framework (TAXEL).
 
     Cards are self-contained plugin units that declare:
       - card_id: permanent unique identifier
