@@ -1,0 +1,118 @@
+{
+  "name": "recipe_dtm_trx_test",
+  "version": "0.1",
+  "steps": [
+    {
+      "module_id": "config_ppk2_interface",
+      "criteria": {
+        "ppk_port": "/dev/cu.usbmodemECA36ACF6D872",
+        "ppk_mode": "source_meter",
+        "ppk_source_mv": 3000,
+        "ppk_power_on": true,
+        "ppk_keep_powered": true,
+        "ppk_power_settle_sec": 1.5,
+        "step_repeat": 1
+      },
+      "step_id": "card_4324",
+      "enabled": true,
+      "timeout_sec": null,
+      "repeat": 1,
+      "artifacts": {}
+    },
+    {
+      "module_id": "firmware_flasher",
+      "criteria": {
+        "nrfutil_path": "/Users/eugeneyu/.nrfutil/bin/nrfutil",
+        "fw_file_path": "/Users/eugeneyu/workspace/gitProjects/prj_personal/git_automate_test/automate_test/firmwares/dtm/dtm_nrf54l15dk.hex",
+        "netcore_fw_path": "",
+        "serial_number": "001057780666",
+        "erase_mode": "recover",
+        "step_repeat": 1,
+        "send_serial_cmd": false,
+        "serial_cmd_text": ""
+      },
+      "step_id": "card_8740",
+      "enabled": true,
+      "timeout_sec": null,
+      "repeat": 1,
+      "artifacts": {
+        "nrfutil_path": {
+          "name": "nrfutil",
+          "sha256": "f0db645c8384841c4f515e2af230c9330b54b4587ddb459438e0208465a2ba44",
+          "size": 5723664,
+          "path": "/Users/eugeneyu/.nrfutil/bin/nrfutil"
+        },
+        "fw_file_path": {
+          "name": "dtm_nrf54l15dk.hex",
+          "sha256": "e981a685766d20644944c215a6bcbd094298facb20be85b9fdc8290cdc0514b8",
+          "size": 431023,
+          "path": "/Users/eugeneyu/workspace/gitProjects/prj_personal/git_automate_test/automate_test/firmwares/dtm/dtm_nrf54l15dk.hex"
+        },
+        "netcore_fw_path": {
+          "name": "",
+          "path": "",
+          "sha256": "",
+          "missing": true
+        }
+      }
+    },
+    {
+      "module_id": "dtm_tx_test",
+      "criteria": {
+        "tx_channel": 19,
+        "payload_length": 37,
+        "phy_mode": 1,
+        "bit_pattern": 0,
+        "tx_power_dbm": 0,
+        "runtime_ms": 3000,
+        "companion_port": "/dev/cu.usbmodem0010518863563",
+        "companion_baudrate": 19200,
+        "companion_per_limit": 30.0,
+        "companion_measure_rssi": false,
+        "step_repeat": 1,
+        "send_serial_cmd": false,
+        "serial_cmd_text": "",
+        "port": "/dev/cu.usbmodem0010577806663"
+      },
+      "step_id": "card_1933",
+      "enabled": true,
+      "timeout_sec": null,
+      "repeat": 1,
+      "artifacts": {}
+    },
+    {
+      "module_id": "dtm_rx_test",
+      "criteria": {
+        "tx_channel": 19,
+        "payload_length": 37,
+        "phy_mode": 1,
+        "runtime_ms": 2000,
+        "per_limit": 30.0,
+        "measure_rssi": false,
+        "companion_port": "/dev/cu.usbmodem0010518863563",
+        "companion_baudrate": 19200,
+        "companion_tx_dbm": 0.0,
+        "companion_tx_pattern": 0,
+        "companion_lead_sec": 1.0,
+        "step_repeat": 1,
+        "send_serial_cmd": false,
+        "serial_cmd_text": "",
+        "port": "/dev/cu.usbmodem0010577806663"
+      },
+      "step_id": "card_9439",
+      "enabled": true,
+      "timeout_sec": null,
+      "repeat": 1,
+      "artifacts": {}
+    }
+  ],
+  "locked": false,
+  "notes": "",
+  "created_at": "2026-09-16T19:58:34",
+  "created_by": "eugeneyu",
+  "updated_at": "2026-09-16T19:58:34",
+  "schema_version": 1,
+  "exported_at": "2026-09-16T19:58:48",
+  "exported_from": "EUGENEs-MacBook-Pro.local",
+  "fingerprint": "65da99052a59089f8547a845e9c2821a4e741fbd28b44faee0207e7ca5ba1b6a"
+}
