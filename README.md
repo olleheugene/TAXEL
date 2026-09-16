@@ -2,6 +2,11 @@
 
 A test-automation framework for Nordic nRF devices. Test steps are **plug-in cards (modules)**: drop a folder under `cards/`, restart, and it appears in the UI — no framework code to edit.
 
+> [!NOTE]
+> **Disclaimer & Acknowledgement**
+> - **Stability & Usage**: TAXEL was created to facilitate rapid development and streamline bench testing workflows. It does **not** guarantee commercial-grade stability or formal validation. Users are encouraged to evaluate it for development purposes, or fork and adapt the codebase to fit their specific requirements.
+> - **AI-Assisted Development**: This project was designed and developed in active collaboration with AI coding assistants, including **Google Gemini** and **Anthropic Claude**.
+
 It serves two jobs at once, which is why some of its design choices look stricter than a test script needs:
 
 - **A production programming and test tool.** Recipes can be locked, every run is fingerprinted and appended to a traceability log, and an operator sees a
