@@ -82,29 +82,7 @@ Both read the same `cards/` folder and honour `NRF_LANG` (`en`, `ko`, `ja`, `zh`
 ---
 
 # The UI
-
-```
-┌──────────────────────────────────────────────────────────────────────────┐
-│ Recipe   Test   Settings   Mode                                          │
-├──────────────────────────────────────────────────────────────────────────┤
-│ 🔌 DUT Serial: [/dev/cu.usbmodem…] [115200 ▾] [🔄] [⚡ Test] [💻 Terminal] │
-├────────────────────┬─────────────────────────────────────────────────────┤
-│ Card Palette       │ Test Card Dashboard                                 │
-│ ┌────────────────┐ │ ┌─────────────────────────────────────────────────┐ │
-│ │ search…        │ │ │ 🔋 PPK2 Interface Config            ? ⚙          │ │
-│ └────────────────┘ │ │    source_meter @ 3000 mV, DUT power ON         │ │
-│ 3 of 11 cards      │ ├─────────────────────────────────────────────────┤ │
-│                    │ │ 🧩 Bluetooth DTM TX/RX Test   ⬆ ⬇ ? ⚙ ▶ 🗑      │ │
-│ 🔋 PPK2 Config     │ │    Elapsed: 2.4s | Inherited Toolbar Serial     │ │
-│ 🧩 DTM TX/RX Test  │ │    ✅ PASS (CH19 @ 2440MHz TX)                  │ │
-│    Runs Bluetooth… │ │                                                 │ │
-│        ⋮           │ │                       ⋮                         │ │
-│  (drag to add)     │ └─────────────────────────────────────────────────┘ │
-├────────────────────┴─────────────────────────────────────────────────────┤
-│ 5/7 steps (71%)  ████████████░░░░  Run 2/3        station · operator     │
-└──────────────────────────────────────────────────────────────────────────┘
-```
-
+![Main Window](https://github.com/olleheugene/taxel/wiki/resources/en_main_window.png)
 ## Menu bar
 
 Everything that is configured once lives here. It used to sit on the top bar, which made the window too wide for a FullHD screen.
