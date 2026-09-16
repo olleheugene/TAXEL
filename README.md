@@ -83,6 +83,8 @@ Both read the same `cards/` folder and honour `NRF_LANG` (`en`, `ko`, `ja`, `zh`
 
 # The UI
 ![Main Window](https://github.com/olleheugene/taxel/wiki/resources/en_main_window.png)
+![Current Measurement](https://github.com/olleheugene/taxel/wiki/resources/en_current_measurement.png)
+![Radio Performance Measurement](https://github.com/olleheugene/taxel/wiki/resources/en_dtm_rx.png)
 ## Menu bar
 
 Everything that is configured once lives here. It used to sit on the top bar, which made the window too wide for a FullHD screen.
