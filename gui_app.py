@@ -3428,6 +3428,17 @@ class MainWindow(QMainWindow):
                 print(f"⚠️ Failed to read layout file: {e}")
 
         if layout_data and isinstance(layout_data, dict):
+            # 0. Restore recipe metadata
+            recipe_data = layout_data.get("recipe", {})
+            if isinstance(recipe_data, dict) and recipe_data and hasattr(self, "recipe"):
+                self.recipe.name = str(recipe_data.get("name") or "Untitled Recipe")
+                self.recipe.version = str(recipe_data.get("version") or "0.1")
+                self.recipe.locked = bool(recipe_data.get("locked", False))
+                self.recipe.notes = str(recipe_data.get("notes") or "")
+                self.recipe.created_at = str(recipe_data.get("created_at") or "")
+                self.recipe.created_by = str(recipe_data.get("created_by") or "")
+                self.recipe.updated_at = str(recipe_data.get("updated_at") or "")
+
             # 1. Restore application-wide settings
             settings = layout_data.get("settings", {})
             if isinstance(settings, dict) and settings:
@@ -3535,7 +3546,20 @@ class MainWindow(QMainWindow):
         except ValueError:
             serial_baud = 115200
 
+        recipe_data = {}
+        if hasattr(self, "recipe") and self.recipe is not None:
+            recipe_data = {
+                "name": getattr(self.recipe, "name", "Untitled Recipe"),
+                "version": getattr(self.recipe, "version", "0.1"),
+                "locked": bool(getattr(self.recipe, "locked", False)),
+                "notes": getattr(self.recipe, "notes", ""),
+                "created_at": getattr(self.recipe, "created_at", ""),
+                "created_by": getattr(self.recipe, "created_by", ""),
+                "updated_at": getattr(self.recipe, "updated_at", ""),
+            }
+
         data = {
+            "recipe": recipe_data,
             "settings": settings,
             "device_settings": {
                 "serial_port": serial_port,
@@ -3880,6 +3904,7 @@ class MainWindow(QMainWindow):
             dlg.apply_to(self.recipe)
             self.update_recipe_display()
             self.apply_mode_policy()
+            self.save_dashboard_state()
 
     def on_import_recipe_clicked(self) -> None:
         path, _ = QFileDialog.getOpenFileName(
@@ -3923,6 +3948,7 @@ class MainWindow(QMainWindow):
             return
 
         self.update_recipe_display()
+        self.save_dashboard_state()
         QMessageBox.information(
             self, language.tr("recipe_export_title"),
             language.tr("recipe_export_done", path=saved, label=recipe.label,
