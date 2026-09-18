@@ -1,0 +1,6 @@
+# Runtime dependencies.
+#
+# Cython is not listed here - it is only needed to build the .so/.pyd binaries:
+
+cython
+setuptools
